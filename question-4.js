@@ -1,5 +1,23 @@
 function sortProductsByPrice(products) {
   // Your code here
+  // bubble sort
+  for (let i = 0; i < products.length; i++) {
+    for (let j = 1; j < products.length-i; j++) {
+      // console.log(`i: ${i}, j: ${j}`);
+      // console.log(products[j - 1].price, products[j].price);
+
+      if (products[j - 1].price > products[j].price) {
+        let temp = products[j - 1];
+        products[j - 1] = products[j];
+        products[j] = temp;
+        console.log("swap");
+      }
+    }
+    // console.log("===========");
+    
+  }
+
+  return products;
 }
 
 // Test case

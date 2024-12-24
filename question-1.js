@@ -1,5 +1,12 @@
 function findStudentById(students, id) {
   // Your code here
+  // using the linear search algorithm. determind by quesion in notion.
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].id === id) {
+      return students[i];
+    }
+  }
+  return null;
 }
 
 // Test case
